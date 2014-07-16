@@ -1,4 +1,16 @@
 class Pizza
+	def initialize(toppings)
+		@toppings = toppings
+	end
+
+	def toppings
+		@toppings
+	end
+
+	def toppings=(toppings)
+		@toppings = toppings
+	end
+
 end
 
 class Topping
