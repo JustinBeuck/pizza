@@ -7,10 +7,16 @@ class Pizza
 		@toppings
 	end
 
-	def toppings=(toppings)
-		@toppings = toppings
+	def add_toppings(x)
+		if !x.is_a Topping
+			return "HEY THATS NOT A TOPPING"
+		else
+			@toppings << x
 	end
 
+	def vegetarian?
+		@toppings.all?{|x| x.vegetarian}
+	end
 end
 
 class Topping
