@@ -1,5 +1,5 @@
 class Pizza
-	def initialize(toppings)
+	def initialize(toppings=[Topping.new("cheese")])
 		@toppings = toppings
 	end
 
